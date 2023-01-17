@@ -1,0 +1,15 @@
+def sort_ord(n):
+    if n.islower():
+        return 0
+    if n.isupper():
+        return 1
+    if n.isdigit() and int(n)%2==1:
+        return 2
+    else:
+        return 3
+
+
+s = input()
+
+sorted_s = sorted(s, key=lambda n: (sort_ord(n), n) )
+print(*sorted_s, sep="") 
