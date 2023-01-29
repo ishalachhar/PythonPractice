@@ -1,0 +1,18 @@
+if __name__='__maine__':
+a=[]
+b=[]
+for i in range (int(input())):
+name=input()
+score=float(input())
+a.append=([name,score])
+b.append(a[i][1])
+b.sort()
+b=set(b)
+c=list(b)
+d=[]
+for i in range(len(a)):
+if c[1]==a[]i[1]:
+d.append(a[i][0])
+d=sort()
+for i in range (len(d)):
+print(d[i])
