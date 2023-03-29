@@ -1,0 +1,27 @@
+if __name__ == '__main__':
+    N = int(input())
+List=[]
+for i in range(0,N):
+        slap=input()
+        slap=slap.split()
+        if (slap[0]=="insert"):
+            index = int(slap[1])
+            num = int(slap[2])
+            List.insert(index,num)
+        elif slap[0]=="print":
+            print(List)
+        elif slap[0]=="remove":
+            num = int(slap[1])
+            List.remove(num)
+        elif slap[0]=="append":
+            num = int(slap[1])
+            List.append(num)
+        elif slap[0]=="sort":
+            List.sort()
+        elif slap[0]=="pop":
+            List.pop()
+        elif slap[0]=="reverse":
+            List.reverse()
+        else:
+            break
+            exit()
