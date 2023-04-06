@@ -1,0 +1,16 @@
+def solve(s):
+    k= s.index(" ")
+    k = k+1
+    x = s[:k]
+    y = s[k:]
+    return x.capitalize() + y.capitalize()
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
