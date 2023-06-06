@@ -1,0 +1,15 @@
+def myfunc(args):
+
+    even = []
+
+    for i in range(len(arg)):
+
+       if i%2==0:
+
+           even.append(arg[i].lower())
+
+       else: 
+
+           even.append(arg[i].upper())
+
+   return ''.join(even)
